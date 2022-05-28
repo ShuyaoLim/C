@@ -1,0 +1,24 @@
+ul li{
+			list-style-type: none; /* 去掉点**/
+			float: left;/*横向展示**/
+			width: 150px;
+			background-color: lightgray;
+			/* background-image: url(img/美女曹婉瑾4k壁纸.jpg); */
+			line-height: 28px;
+			margin: 1px;
+			text-align: center;
+			height: 30px;
+			padding-top: 4px;
+		}
+		ul li:hover{
+			background-color: darkslategray;  /*鼠标划过后的颜色**/
+		}
+		a{
+			text-decoration: none; /*去除下划线**/
+			color: #ffffff;
+			font-size: 16px;
+		}
+		a:hover{
+			text-decoration: underline;
+			/* background-image: url(img/美女曹婉瑾4k壁纸.jpg); */
+		}
