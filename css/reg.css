@@ -1,0 +1,26 @@
+            ul{
+				width: 400px;
+				margin: auto;
+			}
+			ul li{
+				list-style-type: none;
+				width: 100%;
+				line-height: 60px;
+			}
+			input{
+				width: 90%;
+				height: 45px;
+				font-size: 1.2em;
+				padding-left: 18px;
+				border-radius:5px;
+				border:1px solid #CCCCCC
+			}
+			.button{
+				width: 382px;
+				background-color: #445566;
+				color: #ffffff;
+				height:55px;
+			}
+			input:focus{
+				box-shadow: 0 0 20px #445566;
+			}
