@@ -1,0 +1,27 @@
+.main{
+			margin: auto;
+			border-collapse: collapse;
+			border: 1px solid #5f6f7f;
+		}
+		.main th{
+			font-weight: normal;
+			border: 1px solid #5f6f7f;
+			line-height: 28px;
+		}
+		.main td{
+			border: 1px solid #5f6f7f;
+		}
+		.main input{
+			line-height: 28px;
+			font-size: 16px;
+			text-align: center;
+		}
+		.main input:focus
+		{
+			background-color: #efefef;
+		}
+		.button{
+			width: 200px;
+			font-size: 16px;
+			height: 25px;
+		}
