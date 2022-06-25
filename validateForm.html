@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		fieldset{
+			margin: 0 auto;
+			width: 500px;
+			border-left: none;
+			border-right:none ;
+		}
+		legend{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		//密码非空校验
+		function validate(thisForm){
+			with(thisForm){
+				if(username.value==""){
+					alert("用户账户不可以为空");
+					return false;
+				}
+				if(password.value.length<6||value.length>20){
+					alert("用户密码长度必须在6~20之间");
+				}
+				if(confirmpwd.value !=password.value){
+					alert("两次密码不一致");
+					return false;
+				}
+				else{
+					return true;
+				}
+			}
+			
+		}
+	</script>
+	<body>
+		<fieldset>
+			<legend>新用户注册</legend>
+			<form action="#" method="POST" onsubmit="return validate(this)">
+				<p><input type="text" name="username"placeholder="请输入账号">(<font style="color: red;">用户账号必填!</font>)</p>
+				<p><input type="password"  name="password"placeholder="请输入注册密码">(<font style="color: red;">用户密码必须是6～20位</font>)</p>
+				<p><input type="password" name="confirmpwd"placeholder="请再次输入注册密码">(<font style="color: red;">确认密码必须与用户密码一致</font>)</p>
+				<p><input type="submit" value="注册"></p>
+			</form>
+		</fieldset>
+	</body>
+</html>
