@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script type="text/javascript">
+		function validateEmail(thisForm)
+		{
+			with(thisForm)
+			{
+				var atpos=email.value.indexOf('@');
+				var dotpos=email.value.lastIndexOf('.');
+				if(atpos==-1)
+				{
+					alert("email地址必须有@符号!");
+					return false;
+				}
+				if(atpos==0){
+					alert("@符号前面必须有其他字符!")
+					return false;
+				}
+				if(dotpos-atpos<2){
+					alert("@符号和.号之间必须有其他字符");
+					return false;
+				}
+				else{
+					return true;
+				}
+			}
+		}
+	</script>
+	<body>
+		<form action="#" method="POST" onsubmit="return validateEmail(this)">
+			email:<input type="text" name="email">
+			<input type="submit" value="submit">
+		</form>
+	</body>
+</html>
