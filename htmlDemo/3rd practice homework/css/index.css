@@ -1,0 +1,26 @@
+body{
+	background-color: greenyellow;
+}
+ul li {
+	list-style-type: none; /* 去掉点**/
+	float: left;/*横向展示**/
+	width: 120px;
+	background-color:pink;
+	/* background-image: url(img/美女曹婉瑾4k壁纸.jpg); */
+	line-height: 20px;
+	margin: 1px;
+	text-align: center;
+	height: 20px;
+	padding-top: 4px;
+}
+a{
+			text-decoration: none; /*去除下划线**/
+			color: blue;
+			font-size: 12px;
+}
+a:link{
+	color: blue;
+}
+a:active{
+	color: rosybrown;
+}
